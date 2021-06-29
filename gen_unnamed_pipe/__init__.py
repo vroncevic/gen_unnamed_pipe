@@ -131,7 +131,7 @@ class GenUnnamedPipe(CfgCLI):
                             'generating', getattr(args, 'gen')
                         )
                     )
-                    generator = GenGen_unnamed_pipe(verbose=verbose)
+                    generator = UnnamedPipe(verbose=verbose)
                     status = generator.gen_setup(
                         getattr(args, 'gen'), verbose
                     )
