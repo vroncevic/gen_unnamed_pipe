@@ -120,6 +120,7 @@ setup(
     install_requires=['ats-utilities'],
     package_data={
         'gen_unnamed_pipe': [
+            'conf/gen_unnamed_pipe.logo',
             'conf/gen_unnamed_pipe.cfg',
             'conf/gen_unnamed_pipe_util.cfg',
             'conf/project.yaml',

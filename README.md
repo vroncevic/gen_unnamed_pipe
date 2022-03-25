@@ -4,7 +4,7 @@
 
 **gen_unnamed_pipe** is tool for generation of unnamed pipe modules.
 
-Developed in **[python](https://www.python.org/)** code: **100%**.
+Developed in **[python](https://www.python.org/)** code.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
@@ -32,7 +32,7 @@ other information that should be provided before the modules are installed.
 
 ![Install Python2 Package](https://github.com/vroncevic/gen_unnamed_pipe/workflows/Install%20Python2%20Package%20gen_unnamed_pipe/badge.svg?branch=master) ![Install Python3 Package](https://github.com/vroncevic/gen_unnamed_pipe/workflows/Install%20Python3%20Package%20gen_unnamed_pipe/badge.svg?branch=master)
 
-Currently there are three ways to install tool:
+Currently there are three ways to install tool
 * Install process based on pip
 * Install process based on setup.py (setuptools)
 * Install process based on docker mechanism
@@ -42,7 +42,8 @@ Currently there are three ways to install tool:
 Python package is located at **[pypi.org](https://pypi.org/project/gen-unnamed-pipe/)**.
 
 You can install by using pip
-```
+
+```bash
 # python2
 pip install gen-unnamed-pipe
 # python3
@@ -54,7 +55,8 @@ pip3 install gen-unnamed-pipe
 Navigate to release **[page](https://github.com/vroncevic/gen_unnamed_pipe/releases/)** download and extract release archive.
 
 To install modules, locate and run setup.py with arguments
-```
+
+```bash
 tar xvzf gen_unnamed_pipe-x.y.z.tar.gz
 cd gen_unnamed_pipe-x.y.z/
 # python2
@@ -77,25 +79,26 @@ You can use docker to create image/container.
 
 ### Dependencies
 
-**gen_unnamed_pipe** requires next modules and libraries:
+**gen_unnamed_pipe** requires next modules and libraries
 
 * [ats-utilities - Python App/Tool/Script Utilities](https://vroncevic.github.io/ats_utilities)
 
 ### Generation flow of py module
 
-Base flow of generation process:
+Base flow of generation process
 
-![alt tag](https://raw.githubusercontent.com/vroncevic/gen_unnamed_pipe/dev/docs/gen_unnamed_pipe_flow.png)
+![Generation flow](https://raw.githubusercontent.com/vroncevic/gen_unnamed_pipe/dev/docs/gen_unnamed_pipe_flow.png)
 
 ### Tool structure
 
-**gen_unnamed_pipe** is based on OOP:
+**gen_unnamed_pipe** is based on OOP
 
-Generator structure:
+Generator structure
 
-```
+```bash
 gen_unnamed_pipe/
 ├── conf/
+│   ├── gen_unnamed_pipe.logo
 │   ├── gen_unnamed_pipe.cfg
 │   ├── gen_unnamed_pipe_util.cfg
 │   ├── project.yaml
@@ -125,7 +128,7 @@ gen_unnamed_pipe/
 
 [![Documentation Status](https://readthedocs.org/projects/gen_unnamed_pipe/badge/?version=latest)](https://gen_unnamed_pipe.readthedocs.io/projects/gen_unnamed_pipe/en/latest/?badge=latest)
 
-More documentation and info at:
+More documentation and info at
 * [gen_unnamed_pipe.readthedocs.io](https://gen_unnamed_pipe.readthedocs.io/en/latest/)
 * [www.python.org](https://www.python.org/)
 

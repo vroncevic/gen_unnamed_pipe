@@ -3,7 +3,7 @@ Generate Unnamed Pipe
 
 **gen_unnamed_pipe** is framework for generation Unnamed Pipe modules.
 
-Developed in `python <https://www.python.org/>`_ code: **100%**.
+Developed in `python <https://www.python.org/>`_ code.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
@@ -25,7 +25,7 @@ other information that should be provided before the modules are installed.
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
+   :caption: Contents
 
    self
    modules
@@ -45,7 +45,7 @@ Navigate to release `page`_ download and extract release archive.
 
 .. _page: https://github.com/vroncevic/gen_unnamed_pipe/releases
 
-To install package type the following:
+To install package type the following
 
 .. code-block:: bash
 
@@ -62,7 +62,7 @@ To install package type the following:
     python setup.py install_data
     python3 setup.py install_egg_info
 
-You can use Docker to create image/container, or You can use pip to install:
+You can use Docker to create image/container, or You can use pip to install
 
 .. code-block:: bash
 
@@ -79,23 +79,24 @@ You can use Docker to create image/container, or You can use pip to install:
 Dependencies
 -------------
 
-**gen_unnamed_pipe** requires next modules and libraries:
+**gen_unnamed_pipe** requires next modules and libraries
 
 * `ats-utilities - Python App/Tool/Script Utilities <https://pypi.org/project/ats-utilities/>`_
 
 Framework structure
 --------------------
 
-**gen_unnamed_pipe** is based on OOP:
+**gen_unnamed_pipe** is based on OOP
 
 .. image:: https://raw.githubusercontent.com/vroncevic/gen_unnamed_pipe/dev/docs/gen_named_pipe_flow.png
 
-Framework structure:
+Framework structure
 
 .. code-block:: bash
 
     gen_unnamed_pipe/
     ├── conf/
+    │   ├── gen_unnamed_pipe.logo
     │   ├── gen_unnamed_pipe.cfg
     │   ├── gen_named_pipe_util.cfg
     │   ├── project.yaml
