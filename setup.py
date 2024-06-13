@@ -72,10 +72,7 @@ setup(
     keywords='Unix, Linux, Development, Unnamed Pipe, Modules',
     platforms='POSIX',
     classifiers=PYP_CLASSIFIERS,
-    packages=[
-        'gen_unnamed_pipe', 'gen_unnamed_pipe.pro',
-        'gen_unnamed_pipe.pro.config'
-    ],
+    packages=['gen_unnamed_pipe', 'gen_unnamed_pipe.pro'],
     install_requires=['ats-utilities'],
     package_data={
         'gen_unnamed_pipe': [
