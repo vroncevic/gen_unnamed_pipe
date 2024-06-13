@@ -16,8 +16,8 @@ Copyright
     You should have received a copy of the GNU General Public License along
     with this program. If not, see <http://www.gnu.org/licenses/>.
 Info
-    Defined class GenUnnamedPipe with attribute(s) and method(s).
-    Load a base info, create a CLI interface and run operation(s).
+    Defines class GenUnnamedPipe with attribute(s) and method(s).
+    Loads a base info, create a CLI interface and run operation(s).
 '''
 
 import sys
@@ -44,7 +44,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, https://vroncevic.github.io/gen_unnamed_pipe'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/gen_unnamed_pipe/blob/dev/LICENSE'
-__version__ = '1.0.5'
+__version__ = '1.0.6'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -69,7 +69,7 @@ class GenUnnamedPipe(CfgCLI):
                 | process - Processes and runs tool operation.
     '''
 
-    _GEN_VERBOSE = 'GEN_UNNAMED_PIPE'
+    _GEN_VERBOSE: str = 'GEN_UNNAMED_PIPE'
     _CONFIG: str = '/conf/gen_unnamed_pipe.cfg'
     _LOG: str = '/log/gen_unnamed_pipe.log'
     _LOGO: str = '/conf/gen_unnamed_pipe.logo'
