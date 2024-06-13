@@ -29,7 +29,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2017, https://vroncevic.github.io/gen_unnamed_pipe'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/gen_unnamed_pipe/blob/dev/LICENSE'
-__version__ = '1.0.5'
+__version__ = '1.0.6'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -61,7 +61,7 @@ APPROVED_LICENSES: List[str] = [
 PYP_CLASSIFIERS: List[str] = SUPPORTED_PY_VERSIONS + APPROVED_LICENSES
 setup(
     name='gen_unnamed_pipe',
-    version='1.0.5',
+    version='1.0.6',
     description='Generating Unnamed Pipe Modules',
     author='Vladimir Roncevic',
     author_email='elektron.ronca@gmail.com',

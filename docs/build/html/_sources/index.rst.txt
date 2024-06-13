@@ -1,7 +1,7 @@
 Unnamed pipe generator
 =======================
 
-**gen_unnamed_pipe** is toolset for generation of apache virtual host skeleton for
+**gen_unnamed_pipe** is toolset for generation of unnamed pipe skeleton for
 development embedded applications.
 
 Developed in `python <https://www.python.org/>`_ code.

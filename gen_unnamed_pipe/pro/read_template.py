@@ -17,7 +17,7 @@ Copyright
     with this program. If not, see <http://www.gnu.org/licenses/>.
 Info
     Defines class ReadTemplate with attribute(s) and method(s).
-    Creates an API for reading a PY MODULE template.
+    Creates an API for reading a UNNAMED PIPE template.
 '''
 
 import sys
@@ -37,7 +37,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2024, https://vroncevic.github.io/gen_form_model'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/gen_unnamed_pipe/blob/dev/LICENSE'
-__version__ = '1.0.5'
+__version__ = '1.0.6'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
