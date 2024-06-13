@@ -29,7 +29,7 @@ __author__ = 'Vladimir Roncevic'
 __copyright__ = '(C) 2017, https://vroncevic.github.io/gen_unnamed_pipe'
 __credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__ = 'https://github.com/vroncevic/gen_unnamed_pipe/blob/dev/LICENSE'
-__version__ = '1.0.4'
+__version__ = '1.0.5'
 __maintainer__ = 'Vladimir Roncevic'
 __email__ = 'elektron.ronca@gmail.com'
 __status__ = 'Updated'
@@ -61,7 +61,7 @@ APPROVED_LICENSES: List[str] = [
 PYP_CLASSIFIERS: List[str] = SUPPORTED_PY_VERSIONS + APPROVED_LICENSES
 setup(
     name='gen_unnamed_pipe',
-    version='1.0.4',
+    version='1.0.5',
     description='Generating Unnamed Pipe Modules',
     author='Vladimir Roncevic',
     author_email='elektron.ronca@gmail.com',
@@ -81,12 +81,12 @@ setup(
             f'{CONF}/gen_unnamed_pipe.cfg',
             f'{CONF}/gen_unnamed_pipe_util.cfg',
             f'{CONF}/project.yaml',
-            f'{TEMPLATE}/posix/np.template',
-            f'{TEMPLATE}/posix/np_close.template',
-            f'{TEMPLATE}/posix/np_make.template',
-            f'{TEMPLATE}/posix/np_open.template',
-            f'{TEMPLATE}/posix/np_read.template',
-            f'{TEMPLATE}/posix/np_write.template',
+            f'{TEMPLATE}/np.template',
+            f'{TEMPLATE}/np_close.template',
+            f'{TEMPLATE}/np_make.template',
+            f'{TEMPLATE}/np_open.template',
+            f'{TEMPLATE}/np_read.template',
+            f'{TEMPLATE}/np_write.template',
             f'{LOG}/gen_unnamed_pipe.log'
         ]
     },
