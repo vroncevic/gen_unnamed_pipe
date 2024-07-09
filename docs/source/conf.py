@@ -29,7 +29,7 @@ sys.path.insert(0, os.path.abspath('../../'))
 project: str = 'gen_unnamed_pipe'
 project_copyright: str = '2024, Vladimir Roncevic <elektron.ronca@gmail.com>'
 author: str = 'Vladimir Roncevic <elektron.ronca@gmail.com>'
-version: str = '1.0.6'
+version: str = '1.0.7'
 release: str = 'https://github.com/vroncevic/gen_unnamed_pipe/releases'
 extensions: List[str] = [
     'sphinx.ext.autodoc', 'sphinx.ext.doctest',

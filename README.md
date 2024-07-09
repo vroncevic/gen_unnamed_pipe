@@ -23,6 +23,7 @@ other information that should be provided before the modules are installed.
     - [Install using docker](#install-using-docker)
 - [Dependencies](#dependencies)
 - [Tool structure](#tool-structure)
+- [Code coverage](#code-coverage)
 - [Docs](#docs)
 - [Contributing](#contributing)
 - [Copyright and Licence](#copyright-and-licence)
@@ -110,28 +111,40 @@ Generator structure
 
 ```bash
     gen_unnamed_pipe/
-        ├── conf/
-        │   ├── gen_unnamed_pipe.cfg
-        │   ├── gen_unnamed_pipe.logo
-        │   ├── gen_unnamed_pipe_util.cfg
-        │   ├── project.yaml
-        │   └── template/
-        │       ├── unp_close.template
-        │       ├── unp_make.template
-        │       ├── unp_read.template
-        │       ├── unp.template
-        │       └── unp_write.template
-        ├── __init__.py
-        ├── log/
-        │   └── gen_unnamed_pipe.log
-        ├── pro/
-        │   ├── __init__.py
-        │   ├── read_template.py
-        │   └── write_template.py
-        ├── py.typed
-        └── run/
-            └── gen_unnamed_pipe_run.py
+           ├── conf/
+           │   ├── gen_unnamed_pipe.cfg
+           │   ├── gen_unnamed_pipe.logo
+           │   ├── gen_unnamed_pipe_util.cfg
+           │   ├── project.yaml
+           │   └── template/
+           │       ├── unp_close.template
+           │       ├── unp_make.template
+           │       ├── unp_read.template
+           │       ├── unp.template
+           │       └── unp_write.template
+           ├── __init__.py
+           ├── log/
+           │   └── gen_unnamed_pipe.log
+           ├── pro/
+           │   ├── __init__.py
+           │   ├── read_template.py
+           │   └── write_template.py
+           ├── py.typed
+           └── run/
+               └── gen_unnamed_pipe_run.py
+
+    6 directories, 16 files
 ```
+
+### Code coverage
+
+| Name | Stmts | Miss | Cover |
+|------|-------|------|-------|
+| `gen_unnamed_pipe/__init__.py` | 71 | 14 | 80% |
+| `gen_unnamed_pipe/pro/__init__.py` | 60 | 6 | 90% |
+| `gen_unnamed_pipe/pro/read_template.py` | 43 | 4 | 91% |
+| `gen_unnamed_pipe/pro/write_template.py` | 51 | 5 | 90% |
+| **Total** | 225 | 29 | 87% |
 
 ### Docs
 
