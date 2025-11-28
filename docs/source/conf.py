@@ -4,7 +4,7 @@
 Module
     conf.py
 Copyright
-    Copyright (C) 2017 - 2024 Vladimir Roncevic <elektron.ronca@gmail.com>
+    Copyright (C) 2017 - 2026 Vladimir Roncevic <elektron.ronca@gmail.com>
     gen_unnamed_pipe is free software: you can redistribute it and/or modify it
     under the terms of the GNU General Public License as published by the
     Free Software Foundation, either version 3 of the License, or
@@ -27,9 +27,9 @@ from typing import Any, List, Dict, Tuple
 sys.path.insert(0, os.path.abspath('../../'))
 
 project: str = 'gen_unnamed_pipe'
-project_copyright: str = '2024, Vladimir Roncevic <elektron.ronca@gmail.com>'
+project_copyright: str = '2026, Vladimir Roncevic <elektron.ronca@gmail.com>'
 author: str = 'Vladimir Roncevic <elektron.ronca@gmail.com>'
-version: str = '1.0.7'
+version: str = '1.0.8'
 release: str = 'https://github.com/vroncevic/gen_unnamed_pipe/releases'
 extensions: List[str] = [
     'sphinx.ext.autodoc', 'sphinx.ext.doctest',
