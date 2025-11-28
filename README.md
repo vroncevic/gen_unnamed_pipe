@@ -140,11 +140,11 @@ Generator structure
 
 | Name | Stmts | Miss | Cover |
 |------|-------|------|-------|
-| `gen_unnamed_pipe/__init__.py` | 71 | 14 | 80% |
-| `gen_unnamed_pipe/pro/__init__.py` | 60 | 6 | 90% |
-| `gen_unnamed_pipe/pro/read_template.py` | 43 | 4 | 91% |
-| `gen_unnamed_pipe/pro/write_template.py` | 51 | 5 | 90% |
-| **Total** | 225 | 29 | 87% |
+| `gen_unnamed_pipe/__init__.py` | 69 | 12 | 83%|
+| `gen_unnamed_pipe/pro/__init__.py` | 58 | 4 | 93%|
+| `gen_unnamed_pipe/pro/read_template.py` | 41 | 2 | 95%|
+| `gen_unnamed_pipe/pro/write_template.py` | 49 | 3 | 94%|
+| **Total** | 217 | 21 | 90% |
 
 ### Docs
 
@@ -163,7 +163,7 @@ More documentation and info at
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-Copyright (C) 2017 - 2024 by [vroncevic.github.io/gen_unnamed_pipe](https://vroncevic.github.io/gen_unnamed_pipe/)
+Copyright (C) 2017 - 2026 by [vroncevic.github.io/gen_unnamed_pipe](https://vroncevic.github.io/gen_unnamed_pipe/)
 
 **gen_unnamed_pipe** is free software; you can redistribute it and/or modify
 it under the same terms as Python itself, either Python version 3.x or,
