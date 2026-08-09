@@ -20,68 +20,71 @@ Info
     Defines setup for tool gen_unnamed_pipe.
 '''
 
-from __future__ import print_function
-from typing import List, Optional
-from os.path import abspath, dirname, join
-from setuptools import setup
+from os import walk
+from os.path import abspath, dirname, join, relpath
+from setuptools import setup, find_packages
 
 __author__: str = 'Vladimir Roncevic'
 __copyright__: str = '(C) 2026, https://vroncevic.github.io/gen_unnamed_pipe'
-__credits__: List[str] = ['Vladimir Roncevic', 'Python Software Foundation']
+__credits__: list[str] = ['Vladimir Roncevic', 'Python Software Foundation']
 __license__: str = 'https://github.com/vroncevic/gen_unnamed_pipe/blob/dev/LICENSE'
-__version__: str = '1.0.8'
+__version__: str = '1.0.9'
 __maintainer__: str = 'Vladimir Roncevic'
 __email__: str = 'elektron.ronca@gmail.com'
 __status__: str = 'Updated'
 
-TOOL_DIR: str = 'gen_unnamed_pipe/'
-CONF: str = 'conf'
-TEMPLATE: str = 'conf/template'
-LOG: str = 'log'
 THIS_DIR: str = abspath(dirname(__file__))
-long_description: Optional[str] = None
+long_description: str | None = None
+
 with open(join(THIS_DIR, 'README.md'), encoding='utf-8') as readme:
     long_description = readme.read()
+
 PROGRAMMING_LANG: str = 'Programming Language :: Python ::'
-VERSIONS: List[str] = ['3.10', '3.11', '3.12']
-SUPPORTED_PY_VERSIONS: List[str] = [
-    f'{PROGRAMMING_LANG} {VERSION}' for VERSION in VERSIONS
-]
-PYP_CLASSIFIERS: List[str] = SUPPORTED_PY_VERSIONS
+VERSIONS: list[str] = ['3.12', '3.13', '3.14']
+SUPPORTED_PY_VERSIONS: list[str] = [f'{PROGRAMMING_LANG} {VERSION}' for VERSION in VERSIONS]
+PYP_CLASSIFIERS: list[str] = SUPPORTED_PY_VERSIONS
+
+
+def find_package_data(pkg: str) -> list[str]:
+    '''
+        Finds all files in package to include in package_data.
+
+        :param pkg: Package folder name.
+        :type pkg: <str>
+        :return: List of package files relative to the package folder.
+        :rtype: <list[str]>
+        :exceptions: None.
+    '''
+    package_data: list[str] = []
+
+    for root, dirs, files in walk(pkg):
+        dirs[:] = [d for d in dirs if d != '__pycache__']
+
+        for file in files:
+            if file.endswith('.pyc') or file == '.editorconfig':
+                continue
+
+            full_path: str = join(root, file)
+            rel_path: str = relpath(full_path, pkg)
+            package_data.append(rel_path)
+
+    return package_data
+
+
 setup(
     name='gen_unnamed_pipe',
-    version='1.0.8',
-    description='Generating Unnamed Pipe Modules',
+    version='1.0.9',
+    description='Generating unnamed pipe project',
     author='Vladimir Roncevic',
     author_email='elektron.ronca@gmail.com',
-    url='https://vroncevic.github.io/gen_unnamed_pipe',
+    url='https://vroncevic.github.io/gen_unnamed_pipe/',
     license='GPL-3.0-or-later',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    keywords='Unix, Linux, Development, Unnamed Pipe, Modules',
+    keywords='Unix, Linux, Development, Unnamed pipe, Pipe, IPC, C, C++, generator',
     platforms='POSIX',
     classifiers=PYP_CLASSIFIERS,
-    packages=['gen_unnamed_pipe', 'gen_unnamed_pipe.pro'],
+    packages=find_packages(exclude=['tests', 'tests.*', '*.*.pyc', '*.pyo']),
     install_requires=['ats-utilities'],
-    package_data={
-        'gen_unnamed_pipe': [
-            'py.typed',
-            f'{CONF}/gen_unnamed_pipe.logo',
-            f'{CONF}/gen_unnamed_pipe.cfg',
-            f'{CONF}/gen_unnamed_pipe_util.cfg',
-            f'{CONF}/project.yaml',
-            f'{TEMPLATE}/np.template',
-            f'{TEMPLATE}/np_close.template',
-            f'{TEMPLATE}/np_make.template',
-            f'{TEMPLATE}/np_open.template',
-            f'{TEMPLATE}/np_read.template',
-            f'{TEMPLATE}/np_write.template',
-            f'{LOG}/gen_unnamed_pipe.log'
-        ]
-    },
-    data_files=[(
-        '/usr/local/bin/', [
-            f'{TOOL_DIR}run/gen_unnamed_pipe_run.py'
-        ]
-    )]
+    package_data={'gen_unnamed_pipe': find_package_data('gen_unnamed_pipe')}
 )
