@@ -7,7 +7,16 @@ Subpackages
 .. toctree::
    :maxdepth: 4
 
-   gen_unnamed_pipe.pro
+   gen_unnamed_pipe.core
+   gen_unnamed_pipe.setup
+
+Submodules
+----------
+
+.. toctree::
+   :maxdepth: 4
+
+   gen_unnamed_pipe.engine
 
 Module contents
 ---------------

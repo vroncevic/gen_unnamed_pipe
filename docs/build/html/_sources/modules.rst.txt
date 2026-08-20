@@ -5,3 +5,4 @@ gen_unnamed_pipe
    :maxdepth: 4
 
    gen_unnamed_pipe
+   main
